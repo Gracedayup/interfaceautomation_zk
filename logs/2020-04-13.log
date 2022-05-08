@@ -1,0 +1,55 @@
+2020-04-13 20:17:23,186-[DEBUG]-[msg]:初始化HandleExcel类的__init__方法-[Lineno]:24 module-handle_excel
+2020-04-13 20:17:23,187-[DEBUG]-[msg]:参数filename:C:\Users\pc\Desktop\interfaceautomation\interfaceautomation_v5\test_data\case_login.xlsx,sheet_name:LogIn-[Lineno]:29 module-handle_excel
+2020-04-13 20:17:23,187-[INFO]-[msg]:调用[read]方法-[Lineno]:39 module-handle_excel
+2020-04-13 20:17:23,208-[INFO]-[msg]:初始化Excel对象:[<openpyxl.workbook.workbook.Workbook object at 0x000002974ACA94A8>]-[Lineno]:43 module-handle_excel
+2020-04-13 20:17:23,209-[DEBUG]-[msg]:sheet_name:LogIn,则执行ws = wb[self.sheet_name]-[Lineno]:50 module-handle_excel
+2020-04-13 20:17:23,209-[DEBUG]-[msg]:默认获取第一行为表头:1-[Lineno]:54 module-handle_excel
+2020-04-13 20:17:23,209-[INFO]-[msg]:关闭Excel对象:<openpyxl.workbook.workbook.Workbook object at 0x000002974ACA94A8>-[Lineno]:67 module-handle_excel
+2020-04-13 20:17:23,210-[DEBUG]-[msg]:初始化[__init__]方法-[Lineno]:28 module-handle_request
+2020-04-13 20:17:23,211-[DEBUG]-[msg]:创建[session]对象<requests.sessions.Session object at 0x000002974AD02160>-[Lineno]:30 module-handle_request
+2020-04-13 20:17:23,211-[DEBUG]-[msg]:初始化请求头[headers]{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'}-[Lineno]:32 module-handle_request
+2020-04-13 20:17:23,211-[INFO]-[msg]:>>>>>>>>>>>>>正在进行第【1】条测试用例<<<<<<<<<<<<<<<-[Lineno]:36 module-test_login
+2020-04-13 20:17:23,211-[INFO]-[msg]:测试标题为>>>>>>>>>>>>>>>>：使用正确账号密码登录-[Lineno]:37 module-test_login
+2020-04-13 20:17:23,211-[INFO]-[msg]:请求方法为>>>>>>>>>>>>>>>>：post-[Lineno]:38 module-test_login
+2020-04-13 20:17:23,211-[INFO]-[msg]:接口地址为>>>>>>>>>>>>>>>>：http://192.168.0.139/smw/UAC/CPLogin-[Lineno]:39 module-test_login
+2020-04-13 20:17:23,211-[INFO]-[msg]:测试参数为>>>>>>>>>>>>>>>>：{"userCode": "admin", "password": "1"}-[Lineno]:40 module-test_login
+2020-04-13 20:17:23,258-[INFO]-[msg]:释放session资源-[Lineno]:130 module-handle_request
+2020-04-13 20:17:23,258-[INFO]-[msg]:预期结果为>>>>>>>>>>>>>>>>：{
+    "code": 0,
+    "codeRemark": "成功",
+    "message": "0FMGA0QPW2M1XTU2G0G1M01",
+    "result": "0FMGA0QPW2M1XTU2G0G1M01",
+    "totalCount": "",
+    "totalPage": ""
+}-[Lineno]:50 module-test_login
+2020-04-13 20:17:23,258-[INFO]-[msg]:返回结果为>>>>>>>>>>>>>>>>：{'code': 0, 'codeRemark': '成功', 'message': '0FMGA0QPW2M1XTU2G0G1M01', 'result': '0FMGA0QPW2M1XTU2G0G1M01', 'totalCount': None, 'totalPage': None}-[Lineno]:51 module-test_login
+2020-04-13 20:17:23,258-[INFO]-[msg]:>>>>>>>>>>>>>第【1】条用例执行成功<<<<<<<<<<<<<<<-[Lineno]:52 module-test_login
+2020-04-13 20:17:23,258-[INFO]-[msg]:>>>>>>>>>>>>>第【1】条用例执行完成<<<<<<<<<<<<<<<
+
+
+
+
+-[Lineno]:60 module-test_login
+2020-04-13 20:17:23,258-[INFO]-[msg]:>>>>>>>>>>>>>正在进行第【2】条测试用例<<<<<<<<<<<<<<<-[Lineno]:36 module-test_login
+2020-04-13 20:17:23,258-[INFO]-[msg]:测试标题为>>>>>>>>>>>>>>>>：使用错误的账号或密码登录-[Lineno]:37 module-test_login
+2020-04-13 20:17:23,258-[INFO]-[msg]:请求方法为>>>>>>>>>>>>>>>>：post-[Lineno]:38 module-test_login
+2020-04-13 20:17:23,259-[INFO]-[msg]:接口地址为>>>>>>>>>>>>>>>>：http://192.168.0.139/smw/UAC/CPLogin-[Lineno]:39 module-test_login
+2020-04-13 20:17:23,259-[INFO]-[msg]:测试参数为>>>>>>>>>>>>>>>>：{"userCode": "admin", "password": "12"}-[Lineno]:40 module-test_login
+2020-04-13 20:17:23,277-[INFO]-[msg]:释放session资源-[Lineno]:130 module-handle_request
+2020-04-13 20:17:23,278-[INFO]-[msg]:预期结果为>>>>>>>>>>>>>>>>：{
+    "code": 11000,
+    "codeRemark": "其它错误",
+    "message": "密码错误！",
+    "result": "",
+    "totalCount": "",
+    "totalPage": ""
+}-[Lineno]:50 module-test_login
+2020-04-13 20:17:23,278-[INFO]-[msg]:返回结果为>>>>>>>>>>>>>>>>：{'code': 11000, 'codeRemark': '其它错误', 'message': '密码错误！', 'result': None, 'totalCount': None, 'totalPage': None}-[Lineno]:51 module-test_login
+2020-04-13 20:17:23,278-[INFO]-[msg]:>>>>>>>>>>>>>第【2】条用例执行成功<<<<<<<<<<<<<<<-[Lineno]:52 module-test_login
+2020-04-13 20:17:23,278-[INFO]-[msg]:>>>>>>>>>>>>>第【2】条用例执行完成<<<<<<<<<<<<<<<
+
+
+
+
+-[Lineno]:60 module-test_login
+2020-04-13 20:17:23,286-[INFO]-[msg]:测试已全部完成, 可前往[C:\Users\pc\Desktop\interfaceautomation\interfaceautomation_v5\test_report]查询测试报告-[Lineno]:24 module-runner
